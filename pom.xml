@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.xzit</groupId>
+  <artifactId>springFramework</artifactId>
+  <packaging>pom</packaging>
+    <modules>
+        <module>day_01</module>
+        <module>day_01_spring</module>
+        <module>day_01_instance</module>
+        <module>day_01_lifecycle</module>
+        <module>day_Spring_autoware</module>
+        <module>day_Spring_collection</module>
+        <module>day_Spring_datasource</module>
+        <module>day_Spring_annotation_bean</module>
+        <module>Spring_annotation_bean_manager</module>
+        <module>spring_annotation_di</module>
+        <module>Spring_third_bean_manager</module>
+    </modules>
+    <version>1.0-SNAPSHOT</version>
+  <name>springFramework Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>springFramework</finalName>
+  </build>
+</project>
