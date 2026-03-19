@@ -1,0 +1,18 @@
+package com.xzit.dao.impl;
+
+import com.xzit.dao.BookDao;
+import org.springframework.stereotype.Component;
+
+@Component("bookDao")
+public class BookDaoImpl implements BookDao {
+    private String name;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void save() {
+        System.out.println("book dao save ..."+name);
+    }
+}

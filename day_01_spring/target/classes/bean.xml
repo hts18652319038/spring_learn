@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--<bean id="userDao" class="com.xzit.user.UserDaoJdbcImpl"/>
+    <bean id="userDao1" class="com.xzit.user.UserDaoMybatisImpl"/>
+    <bean id="boy" class="com.xzit.user.Boy">
+        <property name="name" value="李四"></property>
+        <property name="age" value="20"></property>
+    </bean>-->
+    <bean id="bookDao" class="com.xzit.dao.impl.BookDaoImpl" scope="prototype"/>
+    <bean id="bookService" name="service service2 bookEbi" class="com.xzit.service.impl.BookServiceImpl">
+        <!--配置server与dao的关系-->
+        <property name="bookDao" ref="bookDao"/>
+    </bean>
+</beans>
